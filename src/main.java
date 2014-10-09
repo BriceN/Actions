@@ -25,7 +25,7 @@ public class main {
 		}
 		
 		SequentialScheduler SS = new SequentialScheduler(a);
-
+		//test
 			
 			SS.doStep();
 			//System.out.println(SS.getAction(j));
