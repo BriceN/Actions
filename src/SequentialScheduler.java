@@ -29,18 +29,20 @@ public class SequentialScheduler extends Scheduler {
 	@Override
 	public void reallyDoStep() {
 		int j=0;
-		while(this.currentAction.hasNext())
+		do
 		{
 			
 			Action a = this.nextAction();
-			while(!(a.isFinished()))
+			do
 			{
 				System.out.println(this.getAction(j));
 				a.doStep();
 				
 			}
+			while(!(a.isFinished()));
 			j++;
 		}
+		while(this.currentAction.hasNext());
 
 	}
 

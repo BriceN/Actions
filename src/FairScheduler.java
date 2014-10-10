@@ -7,18 +7,8 @@ public class FairScheduler extends Scheduler {
 		super(a);
 		
 	}
-	
-	@Override
-	public void add(Action a) {
-		// TODO Auto-generated method stub
 
-	}
 
-	@Override
-	public Action nextAction() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	@Override
 	public boolean isReady() {
